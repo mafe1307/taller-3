@@ -1,7 +1,7 @@
 # Taller 3: Medallón Spark & Arquitectura  
 **Módulo 3: Spark**
 
-# *Presentado por: Maria Fernanda Torres, Ingrid Melissa Céspedes Díaz
+# *Presentado por: Maria Fernanda Torres, Ingrid Melissa Céspedes Díaz*
 
 ## 1. Introducción
 El Taller 3 forma parte del **Módulo 3: Spark** y se basa en la implementación del  
@@ -46,12 +46,8 @@ una capa adicional de **Cuarentena** para el manejo de datos inválidos.
 
 ### Flujo de la Arquitectura
 
-```mermaid
-flowchart LR
-    Bronze[Bronze<br/>(Crudo)]
-    Silver[Silver<br/>(Limpio)]
-    Quarantine[Quarantine<br/>(Datos inválidos)]
-    Gold[Gold<br/>(Agregado)]
+Bronze → Silver → Quarantine → Gold
+
 
     Bronze --> Silver
     Silver -->|inválidos| Quarantine
