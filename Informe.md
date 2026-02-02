@@ -48,9 +48,3 @@ una capa adicional de **Cuarentena** para el manejo de datos inválidos.
 
 Bronze → Silver → Quarantine → Gold
 
-
-    Bronze --> Silver
-    Silver -->|inválidos| Quarantine
-    Silver -->|válidos| Gold
-
-    style Quarantine fill:#ffe6e6,stroke:#cc0000,stroke-width:2px
